@@ -1,0 +1,56 @@
+<div fxLayout="row" fxLayoutAlign="start none">
+
+<mat-action-list>
+
+<mat-card class="help-menu" style="cursor: pointer;" 
+[routerLink]="['/knowledge/admin-guide']"
+[routerLinkActive]="'active'"
+>
+<mat-card-header>
+    <mat-card-title>
+        <p class="helpdocs-menu-title">Admin Guide</p>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <p class="helpdocs-menu-subtitle">6 folders</p>
+    </mat-card-subtitle>
+</mat-card-header>
+</mat-card>
+
+    <mat-card class="help-menu">
+    <mat-card-header>
+        <mat-card-title>
+            <p class="helpdocs-menu-title">Manager Guide</p>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <p class="helpdocs-menu-subtitle">9 folders</p>
+        </mat-card-subtitle>
+    </mat-card-header>
+    </mat-card>
+
+    <mat-card class="help-menu">
+        <mat-card-header>
+            <mat-card-title>
+                <p class="helpdocs-menu-title">Employee Guide</p>
+            </mat-card-title>
+            <mat-card-subtitle>
+                <p class="helpdocs-menu-subtitle">8 folders</p>
+            </mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    
+    <mat-card class="help-menu">
+        <mat-card-header>
+            <mat-card-title>
+                <p class="helpdocs-menu-title">CS Guide</p>
+            </mat-card-title>
+            <mat-card-subtitle>
+                <p class="helpdocs-menu-subtitle">11 folders</p>
+            </mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+
+</mat-action-list>
+
+<router-outlet></router-outlet>
+
+</div>

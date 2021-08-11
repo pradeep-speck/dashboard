@@ -1,0 +1,43 @@
+
+  <!-- <mat-toolbar> -->
+
+    <div fxLayout="row" fxLayoutAlign="space-between none" style="background-color: #fff;">
+    <div fxLayout="row">
+    <mat-form-field class="person-search" appearance="fill">
+        <span matPrefix><mat-icon>person_search</mat-icon></span>
+        <input type="text" matInput placeholder="Search Org or Org User">
+      </mat-form-field>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <mat-form-field class="data-search" appearance="fill">
+        <span matPrefix><mat-icon>find_in_page</mat-icon></span>
+        <input type="text" matInput placeholder="Search Customer Request/Feature Story/Issue/Dev Request">
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row">
+      <div fxLayout="row" style="padding-top: 10px; cursor: pointer;">
+          <mat-icon>notifications</mat-icon>
+          <span>Notifications</span>
+      </div>
+
+      <div fxLayout="row" style="padding-left: 15px;">
+          <img src="../../assets/images/user2.png" width="25px" height="25px" alt="user" style="padding-top: 10px;">
+          <span style="padding-top: 10px;">Pradeep Chagarla</span>
+          <div>
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>expand_more</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>logout</mat-icon>
+                <span>Logout</span>
+              </button>
+          </mat-menu>
+        </div>
+    </div>
+
+    </div>
+    </div>
+  <!-- </mat-toolbar> -->

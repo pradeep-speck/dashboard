@@ -1,0 +1,55 @@
+<mat-card id="help-content">
+    <mat-card-header>
+        <mat-card-title>
+            <p class="helpdocs-admin-content-title">Admin Guide</p>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <p class="helpdocs-admin-content-subtitle">The Admin guide of Help Docs</p>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+
+        <div fxLayout="row wrap" fxLayoutGap="20px">
+            <mat-card fxFlex="30" class="content-card" *ngFor="let adminGuide of adminGuideContent;">
+                <mat-card-header fxLayout="column">
+                    <div fxLayout="row" fxLayoutAlign="space-between none">
+                        <mat-card-title>
+                            <p class="helpdocs-admin-content-title">{{ adminGuide.title }}</p>
+                        </mat-card-title>
+
+                        <div style="margin-top: -10px;">
+                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>dialpad</mat-icon>
+                                    <span>Dial</span>
+                                </button>
+                            </mat-menu>
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-card-subtitle>
+                            <p class="helpdocs-admin-content-subtitle">{{adminGuide.content}}</p>
+                        </mat-card-subtitle>
+                    </div>
+                </mat-card-header>
+            </mat-card>
+
+            <mat-card fxFlex="30" class="content-card empty-card">
+                <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+
+                    <div fxLayout="column" fxLayoutAlign="center center" style="cursor: pointer;">
+                        <mat-icon [style.color]="'skyblue'">add_circle</mat-icon>
+                        <span style="color: skyblue;">Add New</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            
+        </div>
+    </mat-card-content>
+
+</mat-card>
