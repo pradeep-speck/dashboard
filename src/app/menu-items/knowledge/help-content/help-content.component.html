@@ -1,4 +1,4 @@
-<mat-card id="help-content">
+<mat-card class="help-content">
     <mat-card-header>
         <mat-card-title>
             <p class="helpdocs-admin-content-title">Admin Guide</p>
@@ -18,7 +18,7 @@
                             <p class="helpdocs-admin-content-title">{{ adminGuide.title }}</p>
                         </mat-card-title>
 
-                        <div style="margin-top: -10px;">
+                        <div class="settings">
                             <button mat-icon-button [matMenuTriggerFor]="menu">
                                 <mat-icon>more_vert</mat-icon>
                             </button>
@@ -43,8 +43,8 @@
                 <mat-card-content fxLayout="row" fxLayoutAlign="center center">
 
                     <div fxLayout="column" fxLayoutAlign="center center" style="cursor: pointer;">
-                        <mat-icon [style.color]="'skyblue'">add_circle</mat-icon>
-                        <span style="color: skyblue;">Add New</span>
+                        <mat-icon [ngClass]="'new-card'">add_circle</mat-icon>
+                        <span class="new-card">Add New</span>
                     </div>
                 </mat-card-content>
             </mat-card>

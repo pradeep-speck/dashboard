@@ -7,7 +7,7 @@
     background: #eee;
   }
 
-  #side-nav
+  .side-nav
   {
       background-color: #273142;
   }
@@ -25,4 +25,9 @@
   .active
   {
       background-color: #394352;
+  }
+
+  .menu-item
+  {
+      cursor: pointer;
   }
