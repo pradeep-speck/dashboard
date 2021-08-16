@@ -20,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/scss"]
+            },
             "outputPath": "dist/dashboard-fix",
             "index": "src/index.html",
             "main": "src/main.ts",

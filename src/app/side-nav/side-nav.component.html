@@ -1,47 +1,46 @@
-<mat-sidenav-container class="total-container">
-    <mat-sidenav mode="side" class="side-nav" opened>
+ <!-- <mat-sidenav-container class="total-container">
+    <mat-sidenav mode="side" class="bgc(#273142)" opened>
 
         <mat-nav-list fxLayout="column" fxLayoutGap="20px">
 
             <img matListAvatar fxFlex="50px" src="../../assets/images/monkey.png" width="50px" height="50px"
                 [routerLink]="['/']" class="menu-image-margin menu-item" alt="main-icon">
 
-            <!-- <mat-divider></mat-divider> -->
 
             <div fxLayout="column" fxFlex="70px" class="menu-image-margin menu-item">
                 <img matListAvatar src="../../assets/images/user.png" width="50px" height="50px" alt="user">
-                <span class="text-color">My Home</span>
+                <span class="c(#ffffff)">My Home</span>
             </div>
 
             <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" class="menu-item">
                 <img src="../../assets/images/feature.png" width="25px" height="25px" alt="features">
-                <span class="text-color">Features</span>
+                <span class="c(#ffffff)">Features</span>
             </div>
 
             <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" class="menu-item">
                 <img src="../../assets/images/issues.png" width="25px" height="25px" alt="Issues">
-                <span class="text-color">Issues</span>
+                <span class="c(#ffffff)">Issues</span>
             </div>
 
             <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" class="menu-item">
                 <img src="../../assets/images/devRequests.png" width="25px" height="25px" alt="Dev Requests">
-                <span class="text-color">Dev Requests</span>
+                <span class="c(#ffffff)">Dev Requests</span>
             </div>
 
             <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" class="menu-item">
                 <img src="../../assets/images/products.png" width="25px" height="25px" alt="Product">
-                <span class="text-color">Product</span>
+                <span class="c(#ffffff)">Product</span>
             </div>
 
             <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" class="menu-item">
                 <img src="../../assets/images/signups.png" width="25px" height="25px" alt="SignUps">
-                <span class="text-color">SignUps</span>
+                <span class="c(#ffffff)">SignUps</span>
             </div>
 
-            <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" [routerLinkActive]="'active'"
+            <div fxLayout="column" fxFlex="70px" fxLayoutAlign="center center" [routerLinkActive]="'bgc(#394352)'"
                 [routerLink]="['/knowledge']" class="menu-item">
                 <img src="../../assets/images/knowledge.png" width="25px" height="25px" alt="Knowledge">
-                <span class="text-color">Knowledge</span>
+                <span class="c(#ffffff)">Knowledge</span>
             </div>
         </mat-nav-list>
 
@@ -54,4 +53,20 @@
 
 
     </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-1">
+            <div class="sidebar bgc(#273142)">
+                <app-nav-menu></app-nav-menu>
+            </div>
+        </div>
+        <div class="col-11">
+            <div class="main">
+                <app-header></app-header>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div> 

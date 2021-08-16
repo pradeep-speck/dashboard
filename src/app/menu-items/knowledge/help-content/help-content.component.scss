@@ -1,11 +1,14 @@
+@use '../../../../scss/variables';
+@use '../../../../scss/colors';
+
 .help-content
 {
     width: 70vw;
-    margin-left: 20px;
+    margin-left: calc(#{variables.$rem-1} + 4px); // 20px
 }
 .content-card
 {
-margin-bottom: 20px;
+margin-bottom: calc(#{variables.$rem-1} + 4px); // 20px
 }
 
 .helpdocs-admin-content-title
@@ -22,9 +25,5 @@ margin-bottom: 20px;
 }
 .settings
 {
-    margin-top: -10px;
-}
-.new-card
-{
-    color: skyblue;
+    margin-top: calc(-#{variables.$rem-\.5} - 2px); // -10px
 }

@@ -1,0 +1,12 @@
+@use '../../../scss/variables';
+@use '../../../scss/colors';
+
+.menu-image-margin
+  {
+    margin-left: calc(#{variables.$rem-1} + 4px); //20px
+  }
+
+  .menu-item
+  {
+      cursor: pointer;
+  }

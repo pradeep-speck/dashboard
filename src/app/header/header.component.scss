@@ -1,3 +1,7 @@
+// @use 'variables';
+@use '../../scss/variables';
+@use '../../scss/colors';
+
 .person-search
 {
     width: 20vw;
@@ -14,23 +18,18 @@
     height: 45px;
 }
 
-.header-bg-color
-{
-    background-color: #fff;
-}
-
 .notifications
 {
-    padding-top: 10px; 
+    padding-top: calc(#{variables.$rem-\.5} + 2px) ; // 10px
     cursor: pointer;
 }
 
 .user
 {
-    padding-left: 15px;
+    padding-left: variables.$rem-1;
 }
 
 .padding-space
 {
-    padding-top: 10px;
+    padding-top: calc(#{variables.$rem-\.5} + 2px); // 10px
 }

@@ -1,3 +1,6 @@
+@use '../../scss/variables';
+@use '../../scss/colors';
+
 .total-container {
     position: absolute;
     top: 0;
@@ -7,27 +10,19 @@
     background: #eee;
   }
 
-  .side-nav
-  {
-      background-color: #273142;
-  }
+//  .main {
+    //  margin-left: -(variables.$rem-2); // -32px
+//  }
 
-  .menu-image-margin
-  {
-      margin-left: 20px;
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    -webkit-box-shadow: -1px 0px 29px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 0px 29px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 0px 29px -10px rgba(0, 0, 0, 0.75);
+   
   }
-
-  .text-color
-  {
-      color: #ffffff;
-  }
-
-  .active
-  {
-      background-color: #394352;
-  }
-
-  .menu-item
-  {
-      cursor: pointer;
-  }
+  
